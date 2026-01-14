@@ -1,4 +1,5 @@
-# Práctica vídeo
+# Práctica Vídeo
+
 1. Instala FFmpeg.
 2. Descarga el vídeo de Aules. Se trata de un .mp4 a 1080p.
 3. Haz
