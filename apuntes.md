@@ -276,21 +276,6 @@ Es un formato de fichero que sirve como "caja" para agrupar diferentes elementos
 
 **Ejemplos de contenedores:** MP4, MKV, MOV, OGG.
 
-# Cálculo de peso (Vídeo)
-
-Al igual que en el audio, podemos calcular el peso de un archivo de vídeo sin compresión mediante la siguiente fórmula:
-
-$$Peso = (\text{Ancho} \times \text{Alto}) \times \text{Profundidad de color} \times \text{FPS} \times \text{Tiempo}$$
-
-### Conceptos clave:
-* **Resolución:**
-    * **1080p:** $1920 \times 1080$
-    * **4K:** $4096 \times 2160$
-    * **8K:** $7680 \times 4320$
-* **Profundidad de color:** bits usados para definir el color de cada píxel (24 bits habitualmente: 8+8+8).
-* **FPS:** Frames (fotos) por segundo.
-
----
 
 # Cálculo de peso (Vídeo)
 
@@ -452,4 +437,69 @@ ffprobe -v error -show_streams fichero.mp4
 > **Respuesta:** El servidor soportaría **200 usuarios** simultáneos antes de alcanzar el límite del 80%.
 
 ![alt text](/imagenes/image-6.png)
-![alt text](/imagenes/image-7.png)
+
+### ⚠️ ¡No te confundas con las letras!
+
+| Símbolo | Nombre | Equivalencia |
+| :--- | :--- | :--- |
+| **b** (minúscula) | bit | Unidad mínima |
+| **B** (mayúscula) | Byte | **8 bits** |
+
+**Conversiones rápidas:**
+* **De bit a Byte:** Dividir entre 8.
+* **De Byte a bit:** Multiplicar por 8.
+* **De B a Byte:** Es lo mismo (1 B = 1 Byte).
+# 📘 Guía de Conversión: El Dilema del 1000 vs 1024
+
+En informática y redes, existen dos formas de medir. Para tu examen de **Redes y Vídeo Digital**, la clave es saber en qué contexto estás.
+
+---
+
+## 1. El Sistema Decimal (Base 1.000) 🌐
+Es el estándar de la **industria de telecomunicaciones** y fabricantes de hardware.
+
+* **Cuándo usarlo:**
+    * Cálculos de **Bitrate** (Mbps, kbps).
+    * Velocidad de internet y redes.
+    * Capacidad comercial de discos duros.
+* **La lógica:**
+    * $1 \text{ kb} = 1.000 \text{ bits}$
+    * $1 \text{ Mb} = 1.000 \text{ kb}$
+    * $1 \text{ Gb} = 1.000 \text{ Mb}$
+
+> **Usa 1.000 por defecto en ejercicios de vídeo y streaming**, ya que los códecs (H.264, H.265) siempre se miden así.
+
+---
+
+## 2. El Sistema Binario (Base 1.024) 💻
+Es el estándar que usan los **Sistemas Operativos** y la memoria RAM.
+
+* **Cuándo usarlo:**
+    * Si el enunciado menciona unidades con "i" (**KiB, MiB, GiB**).
+    * Si el profesor pide específicamente la "capacidad real en Windows".
+    * Cálculos de memoria RAM.
+* **La lógica:**
+    * $1 \text{ KiB} = 1.024 \text{ Bytes}$
+    * $1 \text{ MiB} = 1.024 \text{ KiB}$
+    * $1 \text{ GiB} = 1.024 \text{ MiB}$
+
+---
+
+## ⚡ Resumen de "Salto de Unidades"
+
+Para no fallar, sigue este orden mental en los problemas:
+
+1.  **¿Es Bitrate o Almacenamiento?**
+    * Si es bitrate, usa **bits** (minúscula) y base **1.000**.
+    * Si es almacenamiento, usa **Bytes** (mayúscula) y base **1.000** (o 1.024 si te lo piden).
+
+2.  **¿Tengo que cruzar el puente?**
+    * Si pasas de red (bits) a disco (Bytes), **DIVIDE ENTRE 8**.
+    * Si pasas de disco (Bytes) a red (bits), **MULTIPLICA POR 8**.
+
+---
+
+### Ejemplo de Examen:
+**Pregunta:** "¿Cuántos MB son 8.000 kbps?"
+1.  Pasamos de kbps a Mbps: $8.000 / 1.000 = 8 \text{ Mbps}$.
+2.  Pasamos de Megabits a Megabytes: $8 / 8 = \mathbf{1 \text{ MB/s}}$.
