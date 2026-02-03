@@ -498,7 +498,7 @@ La respuesta más aproximada es la **a. 555 horas**.
 **Respuesta correcta:**
 **b. 128 kbps**
 
-### 13. Ejercicio: Capacidad máxima de oyentes (Unicast)
+### 23. Ejercicio: Capacidad máxima de oyentes (Unicast)
 
 **Enunciado:** En una red con **100 Mbps de subida**, ¿cuántos oyentes simultáneos pueden recibir un flujo de audio de **256 kbps** antes de saturar la línea?
 
@@ -521,7 +521,7 @@ La respuesta más aproximada es la **a. 555 horas**.
 **Respuesta correcta:**
 **a. 390 oyentes**
 
-### 14. Ejercicio: Cálculo de peso de vídeo RAW (1080p)
+### 24. Ejercicio: Cálculo de peso de vídeo RAW (1080p)
 
 **Enunciado:** ¿Cuánto pesa una toma de **5 segundos** de vídeo **1080p (1920x1080)** a **30 fps** y **24 bits** de color sin comprimir?
 
@@ -544,7 +544,7 @@ La respuesta más aproximada es la **a. 555 horas**.
 **Respuesta correcta:**
 **b. 933,12 MB**
 
-### 15. Ejercicio: Reducción de peso por compresión (MP3)
+### 25. Ejercicio: Reducción de peso por compresión (MP3)
 
 **Enunciado:** Una canción de **4 minutos** pesa 42,33 MB en formato WAV. Si se comprime a MP3 a **128 kbps**, ¿cuál será su nuevo peso aproximado?
 
@@ -569,7 +569,7 @@ La respuesta más aproximada es la **a. 555 horas**.
 **Respuesta correcta:**
 **d. 3,84 MB**
 
-### 16. Ejercicio: Peso de Audio Mono de Alta Calidad (WAV)
+### 26. Ejercicio: Peso de Audio Mono de Alta Calidad (WAV)
 
 **Enunciado:** Calcula el peso de **10 minutos** de audio sin compresión (WAV) a **48 kHz**, **24 bits** y **un solo canal (mono)**.
 
@@ -589,7 +589,7 @@ La respuesta más aproximada es la **a. 555 horas**.
 
 **Respuesta correcta:** **a. 86,4 MB**
 
-### 17. Ejercicio: Bitrate de Vídeo RAW (Baja Resolución)
+### 27. Ejercicio: Bitrate de Vídeo RAW (Baja Resolución)
 
 **Enunciado:** ¿Cuál es el bitrate de un vídeo de seguridad antiguo de **360p (640x360)** a **15 fps** y **24 bits** de color sin comprimir?
 
@@ -609,7 +609,7 @@ La respuesta más aproximada es la **a. 555 horas**.
 **Respuesta correcta:**
 **a. 82,94 Mbps**
 
-### 18. Ejercicio: Capacidad de almacenamiento masivo (TB)
+### 28. Ejercicio: Capacidad de almacenamiento masivo (TB)
 
 **Enunciado:** ¿Cuántas horas de vídeo de perfil "HD" (**2 Mbps**) se pueden guardar en un disco de **1 TB**?
 
@@ -631,7 +631,7 @@ La respuesta más aproximada es la **a. 555 horas**.
 **Respuesta correcta:**
 **d. 1.111 horas**
 
-### 19. Ejercicio: Tamaño de un Podcast (MP3 CBR)
+### 29. Ejercicio: Tamaño de un Podcast (MP3 CBR)
 
 **Enunciado:** ¿Cuánto espacio ocupará un podcast de **30 minutos** comprimido a un bitrate constante (CBR) de **128 kbps**?
 
@@ -655,7 +655,7 @@ La respuesta más aproximada es la **a. 555 horas**.
 **Respuesta correcta:**
 **d. 28,8 MB**
 
-### 20. Ejercicio: Bitrate de Vídeo 8K RAW (HDR)
+### 30. Ejercicio: Bitrate de Vídeo 8K RAW (HDR)
 
 **Enunciado:** Calcula el bitrate en **Gbps** para un vídeo **8K (7680x4320)** a **60 fps** con una profundidad de color de **30 bits (HDR)** sin compresión.
 
